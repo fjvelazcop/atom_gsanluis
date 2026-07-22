@@ -1,0 +1,27 @@
+{
+    "name": "Empresa San Luis - Soluciones Energéticas Integrales",
+    "short_name": "San Luis",
+    "description": "Empresa San Luis - Líderes en Hidrocarburos, Lubricantes, Suministros y Transporte.",
+    "start_url": "./",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "theme_color": "#003366",
+    "background_color": "#ffffff",
+    "icons": [
+        {
+            "src": "https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["business", "energy"],
+    "lang": "es",
+    "dir": "ltr"
+}

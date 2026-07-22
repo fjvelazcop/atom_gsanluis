@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#003366">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link data-mgx-overview="icon" rel="icon" href="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />
+    <title data-mgx-overview="title">Empresa San Luis</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <meta data-mgx-overview="description" name="description" content="Empresa San Luis - Líderes en Hidrocarburos, Lubricantes, Suministros y Transporte. Soluciones energéticas integrales para el desarrollo sostenible." />
+    <meta data-mgx-overview="og:title" property="og:title" content="Empresa San Luis - Soluciones Energéticas Integrales" />
+    <meta data-mgx-overview="og:description" property="og:description" content="Empresa San Luis - Líderes en Hidrocarburos, Lubricantes, Suministros y Transporte. Soluciones energéticas integrales para el desarrollo sostenible." />
+    <meta data-mgx-overview="og:image" property="og:image" content="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />
+    <meta data-mgx-overview="twitter:title" name="twitter:title" content="Empresa San Luis - Soluciones Energéticas Integrales" />
+    <meta data-mgx-overview="twitter:description" name="twitter:description" content="Empresa San Luis - Líderes en Hidrocarburos, Lubricantes, Suministros y Transporte. Soluciones energéticas integrales para el desarrollo sostenible." />
+    <meta data-mgx-overview="twitter:image" name="twitter:image" content="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">
+                <img src="./logo.png" alt="Empresa San Luis - Logotipo" class="header__logo-img">
+            </a>
+            <nav class="header__nav" id="nav-menu">
+                <ul class="header__nav-list">
+                    <li><a href="#inicio" class="header__nav-link active">Inicio</a></li>
+                    <li><a href="#unidades" class="header__nav-link">Unidades de Negocio</a></li>
+                    <li><a href="#nosotros" class="header__nav-link">Nosotros</a></li>
+                    <li><a href="#sostenibilidad" class="header__nav-link">Sostenibilidad</a></li>
+                    <li><a href="#contacto" class="header__nav-link header__nav-link--cta">Contáctenos</a></li>
+                </ul>
+            </nav>
+            <button class="header__hamburger" id="hamburger" aria-label="Abrir menú de navegación">
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero__carousel" id="hero-carousel">
+                <div class="hero__slide hero__slide--active" data-slide="0">
+                    <div class="hero__slide-bg hero__slide-bg--1">
+                        
+                    </div>
+                    <div class="hero__slide-content">
+                        <h1 class="hero__title">Energía que impulsa el futuro</h1>
+                        <p class="hero__subtitle">Soluciones integrales en hidrocarburos, lubricantes, suministros y transporte para el desarrollo sostenible de la región.</p>
+                        <a href="#unidades" class="hero__cta m3-button">Conoce nuestras soluciones</a>
+                    </div>
+                </div>
+                <div class="hero__slide" data-slide="1">
+                    <div class="hero__slide-bg hero__slide-bg--video">
+                        <video class="hero__video-bg" autoplay muted loop playsinline preload="metadata" poster="./logo.png">
+                            <source src="./video/dji-0478_ON6eDhfO.mp4" type="video/mp4">
+                        </video>
+                        <div class="hero__video-overlay"></div>
+                    </div>
+                    <div class="hero__slide-content">
+                        <h1 class="hero__title">Compromiso con la excelencia</h1>
+                        <p class="hero__subtitle">Más de 20 años brindando servicios de calidad con responsabilidad social y ambiental.</p>
+                        <a href="#nosotros" class="hero__cta m3-button">Descubre nuestra historia</a>
+                    </div>
+                </div>
+                <div class="hero__slide" data-slide="2">
+                    <div class="hero__slide-bg hero__slide-bg--3"></div>
+                    <div class="hero__slide-content">
+                        <h1 class="hero__title">Innovación en cada operación</h1>
+                        <p class="hero__subtitle">Tecnología de punta y procesos certificados que garantizan la máxima eficiencia.</p>
+                        <a href="#contacto" class="hero__cta m3-button">Trabaja con nosotros</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__controls">
+                <button class="hero__control-btn hero__control-btn--prev" aria-label="Slide anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <div class="hero__indicators" id="hero-indicators">
+                    <button class="hero__indicator hero__indicator--active" data-index="0" aria-label="Ir a slide 1"></button>
+                    <button class="hero__indicator" data-index="1" aria-label="Ir a slide 2"></button>
+                    <button class="hero__indicator" data-index="2" aria-label="Ir a slide 3"></button>
+                </div>
+                <button class="hero__control-btn hero__control-btn--next" aria-label="Siguiente slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Business Units Section -->
+        <section class="units" id="unidades">
+            <div class="units__container">
+                <div class="units__header">
+                    <h2 class="section-title">Unidades de Negocio</h2>
+                    <p class="section-subtitle">Cuatro divisiones operativas que trabajan en sinergia para ofrecer soluciones energéticas integrales.</p>
+                </div>
+                <div class="units__grid">
+                    <article class="unit-card m3-container" data-unit="hidrocarburos">
+                        <div class="unit-card__icon">
+                            <svg viewBox="0 0 64 64" width="64" height="64">
+                                <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 44V28l8-8 8 8v16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M28 44v-8h8v8" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="32" cy="28" r="3" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <!-- Placeholder: Insertar logo variante Hidrocarburos -->
+                        <h3 class="unit-card__title">Distribuidora de Hidrocarburos San Luis</h3>
+                        <p class="unit-card__description">Distribución y comercialización de combustibles con la más alta calidad y estándares de seguridad para el sector industrial y comercial.</p>
+                        <a href="#" class="unit-card__link">Conocer más →</a>
+                    </article>
+                    <article class="unit-card m3-container" data-unit="lubricantes">
+                        <div class="unit-card__icon">
+                            <svg viewBox="0 0 64 64" width="64" height="64">
+                                <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M26 20h12l4 12-4 12H26l-4-12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <circle cx="32" cy="32" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="32" cy="32" r="2" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <!-- Placeholder: Insertar logo variante Lubricantes -->
+                        <h3 class="unit-card__title">San Luis Lubricantes</h3>
+                        <p class="unit-card__description">Productos lubricantes de alto rendimiento para maquinaria industrial, vehículos y equipos especializados con certificación internacional.</p>
+                        <a href="#" class="unit-card__link">Conocer más →</a>
+                    </article>
+                    <article class="unit-card m3-container" data-unit="suministros">
+                        <div class="unit-card__icon">
+                            <svg viewBox="0 0 64 64" width="64" height="64">
+                                <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <rect x="22" y="24" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M26 24v-4h12v4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <line x1="32" y1="28" x2="32" y2="36" stroke="currentColor" stroke-width="2"/>
+                                <line x1="28" y1="32" x2="36" y2="32" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <!-- Placeholder: Insertar logo variante Suministros -->
+                        <h3 class="unit-card__title">Suministros (San Luis Suministros)</h3>
+                        <p class="unit-card__description">Provisión integral de insumos y materiales para operaciones industriales, garantizando disponibilidad y logística eficiente.</p>
+                        <a href="#" class="unit-card__link">Conocer más →</a>
+                    </article>
+                    <article class="unit-card m3-container" data-unit="transporte">
+                        <div class="unit-card__icon">
+                            <svg viewBox="0 0 64 64" width="64" height="64">
+                                <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <rect x="16" y="26" width="24" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M40 30h6l4 6v4h-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <circle cx="24" cy="42" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="44" cy="42" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <!-- Placeholder: Insertar logo variante Transporte -->
+                        <h3 class="unit-card__title">ransporte (Transporte San Luis):</h3>
+                        <p class="unit-card__description">Flota moderna y especializada para el transporte seguro de hidrocarburos y materiales peligrosos con cobertura nacional.</p>
+                        <a href="#" class="unit-card__link">Conocer más →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about" id="nosotros">
+            <div class="about__container">
+                <div class="about__content">
+                    <h2 class="section-title">Quiénes Somos</h2>
+                    <p class="about__text">Empresa San Luis es un grupo empresarial con más de dos décadas de trayectoria en el sector energético e industrial. Nuestra visión integral nos permite ofrecer soluciones completas que abarcan desde la distribución de hidrocarburos hasta el transporte especializado.</p>
+                    <p class="about__text">Con presencia en múltiples regiones del país, nos distinguimos por nuestro compromiso con la calidad, la seguridad operacional y el desarrollo sostenible de las comunidades donde operamos.</p>
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-target="20">0</span>
+                            <span class="about__stat-suffix">+</span>
+                            <span class="about__stat-label">Años de experiencia</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-target="500">0</span>
+                            <span class="about__stat-suffix">+</span>
+                            <span class="about__stat-label">Colaboradores</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-target="4">0</span>
+                            <span class="about__stat-suffix"></span>
+                            <span class="about__stat-label">Unidades de negocio</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-target="15">0</span>
+                            <span class="about__stat-suffix">+</span>
+                            <span class="about__stat-label">Regiones atendidas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__visual">
+                    <!-- Placeholder: Insertar imagen corporativa o video institucional -->
+                    <div class="about__image-placeholder">
+                        <svg viewBox="0 0 400 300" width="100%" height="100%">
+                            <rect width="400" height="300" fill="#003366" rx="32"/>
+                            <text x="200" y="140" text-anchor="middle" fill="#95c800" font-size="18" font-family="Rubik">EMPRESA SAN LUIS</text>
+                            <text x="200" y="170" text-anchor="middle" fill="#ffffff" font-size="12" font-family="Rubik">Imagen Corporativa</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sustainability Section -->
+        <section class="sustainability" id="sostenibilidad">
+            <div class="sustainability__container">
+                <h2 class="section-title section-title--light">Sostenibilidad</h2>
+                <p class="section-subtitle section-subtitle--light">Comprometidos con el medio ambiente y el desarrollo responsable de nuestras operaciones.</p>
+                <div class="sustainability__grid">
+                    <div class="sustainability__item">
+                        <div class="sustainability__icon">
+                            <svg viewBox="0 0 48 48" width="48" height="48">
+                                <path d="M24 4C12 4 8 16 8 24c0 8 6 16 16 20 10-4 16-12 16-20 0-8-4-20-16-20z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 12v20M18 18c4 2 8 2 12 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="sustainability__title">Gestión Ambiental</h3>
+                        <p class="sustainability__text">Implementamos sistemas de gestión ambiental certificados que minimizan nuestro impacto ecológico en cada operación.</p>
+                    </div>
+                    <div class="sustainability__item">
+                        <div class="sustainability__icon">
+                            <svg viewBox="0 0 48 48" width="48" height="48">
+                                <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 24l6 6 10-12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="sustainability__title">Seguridad Operacional</h3>
+                        <p class="sustainability__text">Protocolos de seguridad de clase mundial que protegen a nuestros colaboradores, comunidades y el entorno natural.</p>
+                    </div>
+                    <div class="sustainability__item">
+                        <div class="sustainability__icon">
+                            <svg viewBox="0 0 48 48" width="48" height="48">
+                                <path d="M12 36V20l12-8 12 8v16" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M20 36v-8h8v8" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="24" cy="22" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="sustainability__title">Desarrollo Comunitario</h3>
+                        <p class="sustainability__text">Programas de inversión social que fortalecen la educación, salud e infraestructura de las comunidades vecinas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contacto">
+            <div class="contact__container">
+                <div class="contact__info">
+                    <h2 class="section-title">Contáctenos</h2>
+                    <p class="contact__text">Estamos listos para atender sus requerimientos. Comuníquese con nosotros y un asesor especializado le brindará la mejor solución.</p>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <span>+58 (0000) 234-5678</span>
+                        </div>
+                        <div class="contact__detail">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="96f5f9f8e2f7f5e2f9d6f3fbe6e4f3e5f7e5f7f8fae3ffe5b8f5f9fb">contacto@gruposanluis.com</a></span>
+                        </div>
+                        <div class="contact__detail">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Av. Principal las industrias, Zona Industrial II  Barquisimeto Venezuela</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form" id="contact-form">
+                    <div class="contact__form-group">
+                        <input type="text" id="name" name="name" placeholder="Nombre completo" required class="contact__input">
+                    </div>
+                    <div class="contact__form-group">
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required class="contact__input">
+                    </div>
+                    <div class="contact__form-group">
+                        <select id="subject" name="subject" required class="contact__input">
+                            <option value="" disabled selected>Seleccione un tema</option>
+                            <option value="hidrocarburos">Hidrocarburos</option>
+                            <option value="lubricantes">Lubricantes</option>
+                            <option value="suministros">Suministros</option>
+                            <option value="transporte">Transporte</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="contact__form-group">
+                        <textarea id="message" name="message" placeholder="Su mensaje" rows="4" required class="contact__textarea"></textarea>
+                    </div>
+                    <button type="submit" class="contact__submit m3-button">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <!-- Placeholder: Insertar logotipo San Luis versión negativo/blanco -->
+                    <div class="footer__logo-placeholder">
+                        <span class="logo-text logo-text--light">SAN LUIS</span>
+                    </div>
+                </div>
+                <p class="footer__tagline">Soluciones energéticas integrales para el desarrollo sostenible.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Enlaces</h4>
+                <ul class="footer__links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Quiénes Somos</a></li>
+                    <li><a href="#sostenibilidad">Sostenibilidad</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Unidades de Negocio</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Hidrocarburos</a></li>
+                    <li><a href="#">Lubricantes</a></li>
+                    <li><a href="#">Suministros</a></li>
+                    <li><a href="#">Transporte</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Contacto</h4>
+                <ul class="footer__links footer__links--contact">
+                    <li>Av. Principal #123</li>
+                    <li>Zona Industrial</li>
+                    <li>Tel: +58 (251) 234-5678</li>
+                    <li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="41222e2f352022352e01242c313324322032202f2d3428326f222e2c">[email&#160;protected]</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Empresa San Luis. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="./script.js"></script>
+</body>
+
+</html>
