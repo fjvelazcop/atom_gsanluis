@@ -1,10 +1,19 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import { glob } from 'glob';
 
 // ============================================
 // GRUPO SAN LUIS - Vite Configuration
 // Optimized for Vercel production deployment
 // ============================================
+
+// Get all HTML files for multi-page app support
+const htmlFiles = glob.sync('*.html').reduce((acc, file) => {
+  const name = file.replace('.html', '');
+  acc[name] = resolve(__dirname, file);
+  return acc;
+}, {});
+
 export default defineConfig({
   // Base path for production (Vercel serves from root)
   base: '/',
@@ -23,8 +32,10 @@ export default defineConfig({
     // CSS code splitting
     cssCodeSplit: false,
 
-    // Rollup options for optimized bundles
+    // Rollup options for multi-page app and optimized bundles
     rollupOptions: {
+      // Multi-page app: include all HTML files as entry points
+      input: htmlFiles,
       output: {
         // Manual chunks for better caching
         manualChunks: {
