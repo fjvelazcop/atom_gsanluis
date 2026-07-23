@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#003366">
+    <title>Suministros — Grupo San Luis</title>
+    <link rel="icon" href="./logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./unidad.css">
+    <meta name="description" content="Suministros San Luis - Cadena de abastecimiento integral, insumos industriales y logística eficiente para su operación." />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="/" class="header__logo">
+                <img src="./logo.png" alt="Grupo San Luis - Logotipo" class="header__logo-img">
+            </a>
+            <nav class="header__nav" id="nav-menu">
+                <ul class="header__nav-list">
+                    <li><a href="/" class="header__nav-link">Inicio</a></li>
+                    <li><a href="/#unidades" class="header__nav-link active">Unidades de Negocio</a></li>
+                    <li><a href="/#nosotros" class="header__nav-link">Nosotros</a></li>
+                    <li><a href="/#sostenibilidad" class="header__nav-link">Sostenibilidad</a></li>
+                    <li><a href="/#contacto" class="header__nav-link header__nav-link--cta">Contáctenos</a></li>
+                </ul>
+            </nav>
+            <button class="header__hamburger" id="hamburger" aria-label="Abrir menú">
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <main>
+        <!-- ===== HERO ===== -->
+        <section class="unidad-hero" id="hero" style="--hero-gradient: linear-gradient(135deg, #003366 0%, #1a4a6e 50%, #0d2137 100%);">
+            <div class="unidad-hero__bg" style="background: var(--hero-gradient);"></div>
+            <div class="unidad-hero__content">
+                <span class="unidad-hero__badge" data-aos="fade-down">Unidad de Negocio</span>
+                <h1 class="unidad-hero__title" data-aos="fade-up" data-aos-delay="100">Suministros</h1>
+                <p class="unidad-hero__subtitle" data-aos="fade-up" data-aos-delay="200">Cadena de abastecimiento integral con los mejores insumos industriales, logística eficiente y garantía de calidad en cada entrega.</p>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <a href="#contacto" class="m3-button m3-button--gold">Solicitar cotización</a>
+                </div>
+            </div>
+            <div class="unidad-hero__scroll">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+            </div>
+        </section>
+
+        <!-- ===== OVERVIEW ===== -->
+        <section class="unidad-overview">
+            <div class="unidad-overview__container">
+                <div class="unidad-overview__content" data-aos="fade-right">
+                    <h2 class="section-title">Cadena de Suministro</h2>
+                    <p class="unidad-overview__text">En <strong>Grupo San Luis</strong>, nuestra división de Suministros gestiona una cadena de abastecimiento integral que garantiza la disponibilidad oportuna de insumos y materiales críticos para operaciones industriales. Trabajamos con los mejores proveedores nacionales e internacionales.</p>
+                    <p class="unidad-overview__text">Nuestro sistema logístico de clase mundial asegura que cada producto llegue en óptimas condiciones, en el tiempo justo y con la documentación necesaria para su incorporación inmediata a los procesos productivos.</p>
+                </div>
+                <div class="unidad-overview__stats" data-aos="fade-left">
+                    <div class="unidad-stat" data-aos="zoom-in">
+                        <span class="unidad-stat__number" data-target="500">0</span>
+                        <span class="unidad-stat__suffix">+</span>
+                        <span class="unidad-stat__label">Productos disponibles</span>
+                    </div>
+                    <div class="unidad-stat" data-aos="zoom-in" data-aos-delay="100">
+                        <span class="unidad-stat__number" data-target="98">0</span>
+                        <span class="unidad-stat__suffix">%</span>
+                        <span class="unidad-stat__label">Cumplimiento de entregas</span>
+                    </div>
+                    <div class="unidad-stat" data-aos="zoom-in" data-aos-delay="200">
+                        <span class="unidad-stat__number" data-target="80">0</span>
+                        <span class="unidad-stat__suffix">+</span>
+                        <span class="unidad-stat__label">Proveedores aliados</span>
+                    </div>
+                    <div class="unidad-stat" data-aos="zoom-in" data-aos-delay="300">
+                        <span class="unidad-stat__number" data-target="15">0</span>
+                        <span class="unidad-stat__suffix">+</span>
+                        <span class="unidad-stat__label">Años de experiencia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DETAILS ===== -->
+        <section class="unidad-details">
+            <div class="unidad-details__container">
+                <h2 class="section-title" data-aos="fade-up">Nuestros Servicios</h2>
+                <div class="unidad-details__grid">
+                    <div class="unidad-detail-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="unidad-detail-card__icon">
+                            <svg viewBox="0 0 48 48" width="48" height="48">
+                                <path d="M8 24h32M8 24l6-8h20l6 8M8 24v10h32V24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <circle cx="18" cy="34" r="2" fill="currentColor"/>
+                                <circle cx="30" cy="34" r="2" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="unidad-detail-card__title">Cadena de Abastecimiento</h3>
+                        <p class="unidad-detail-card__text">Gestión integral de compras, inventarios y distribución con plataforma tecnológica que optimiza cada etapa del proceso logístico.</p>
+                    </div>
+                    <div class="unidad-detail-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="unidad-detail-card__icon">
+                            <svg viewBox="0 0 48 48" width="48" height="48">
+                                <rect x="10" y="8" width="28" height="32" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <line x1="18" y1="16" x2="30" y2="16" stroke="currentColor" stroke-width="2"/>
+                                <line x1="18" y1="22" x2="28" y2="22" stroke="currentColor" stroke-width="2"/>
+                                <line x1="18" y1="28" x2="26" y2="28" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="unidad-detail-card__title">Catálogo de Insumos</h3>
+                        <p class="unidad-detail-card__text">Amplio portafolio de productos industriales: lubricantes, filtros, repuestos, equipos de protección personal y materiales de operación.</p>
+                    </div>
+                    <div class="unidad-detail-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="unidad-detail-card__icon">
+                            <svg viewBox="0 0 48 48" width="48" height="48">
+                                <circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 12v12l8 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="24" cy="24" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="unidad-detail-card__title">Logística Eficiente</h3>
+                        <p class="unidad-detail-card__text">Sistema de distribución multimodal con seguimiento en tiempo real, optimización de rutas y entregas justo a tiempo (JIT).</p>
+                    </div>
+                    <div class="unidad-detail-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="unidad-detail-card__icon">
+                            <svg viewBox="0 0 48 48" width="48" height="48">
+                                <polygon points="24 6 6 36 42 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                                <line x1="24" y1="24" x2="24" y2="14" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="unidad-detail-card__title">Garantía de Calidad</h3>
+                        <p class="unidad-detail-card__text">Procesos certificados de control de calidad con trazabilidad completa y verificación de estándares en cada producto entregado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA ===== -->
+        <section class="unidad-cta" id="contacto">
+            <div class="unidad-cta__container">
+                <div class="unidad-cta__content" data-aos="fade-up">
+                    <h2 class="section-title section-title--light">¿Requiere insumos para su operación?</h2>
+                    <p class="unidad-cta__text">Contáctenos y nuestro equipo le presentará el catálogo completo de productos disponibles para su industria.</p>
+                    <form class="unidad-cta__form" id="unidad-contact-form">
+                        <div class="unidad-cta__form-row">
+                            <input type="text" name="name" placeholder="Nombre completo" required class="unidad-cta__input">
+                            <input type="email" name="email" placeholder="Correo electrónico" required class="unidad-cta__input">
+                        </div>
+                        <div class="unidad-cta__form-row">
+                            <input type="tel" name="phone" placeholder="Teléfono" class="unidad-cta__input">
+                            <input type="text" name="company" placeholder="Empresa" class="unidad-cta__input">
+                        </div>
+                        <textarea name="message" placeholder="Describa los insumos que necesita" rows="3" required class="unidad-cta__textarea"></textarea>
+                        <button type="submit" class="m3-button m3-button--gold">
+                            <span class="btn-text">Solicitar información</span>
+                            <span class="btn-spinner">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="31.4 31.4" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <input type="hidden" name="unidad" value="Suministros">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__col" data-aos="fade-up">
+                <div class="footer__logo">
+                    <div class="footer__logo-placeholder">
+                        <span class="logo-text logo-text--light">GRUPO SAN LUIS</span>
+                    </div>
+                </div>
+                <p class="footer__tagline">Soluciones energéticas integrales para el desarrollo sostenible.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    <a href="#" class="footer__social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"/></svg></a>
+                </div>
+            </div>
+            <div class="footer__col" data-aos="fade-up" data-aos-delay="100">
+                <h4 class="footer__heading">Enlaces</h4>
+                <ul class="footer__links">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/#nosotros">Quiénes Somos</a></li>
+                    <li><a href="/#sostenibilidad">Sostenibilidad</a></li>
+                    <li><a href="/#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__col" data-aos="fade-up" data-aos-delay="200">
+                <h4 class="footer__heading">Unidades de Negocio</h4>
+                <ul class="footer__links">
+                    <li><a href="/hidrocarburos">Hidrocarburos</a></li>
+                    <li><a href="/suministros">Suministros</a></li>
+                    <li><a href="/transporte">Transporte</a></li>
+                </ul>
+            </div>
+            <div class="footer__col" data-aos="fade-up" data-aos-delay="300">
+                <h4 class="footer__heading">Contacto</h4>
+                <ul class="footer__links footer__links--contact">
+                    <li>Av. Principal las industrias</li>
+                    <li>Zona Industrial II, Barquisimeto</li>
+                    <li>Tel: +58 (251) 234-5678</li>
+                    <li><a href="mailto:desarrollo.corpoagro@gmail.com">desarrollo.corpoagro@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Grupo San Luis. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script type="module" src="./unidad-script.js"></script>
+</body>
+
+</html>
+

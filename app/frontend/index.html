@@ -7,32 +7,34 @@
     <meta name="theme-color" content="#003366">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link data-mgx-overview="icon" rel="icon" href="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />
-    <title data-mgx-overview="title">Empresa San Luis</title>
+    <link rel="icon" href="./logo.png" />
+    <title>Grupo San Luis — Soluciones Energéticas Integrales</title>
     <link rel="manifest" href="./manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- AOS CSS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <meta data-mgx-overview="description" name="description" content="Empresa San Luis - Líderes en Hidrocarburos, Lubricantes, Suministros y Transporte. Soluciones energéticas integrales para el desarrollo sostenible." />
-    <meta data-mgx-overview="og:title" property="og:title" content="Empresa San Luis - Soluciones Energéticas Integrales" />
-    <meta data-mgx-overview="og:description" property="og:description" content="Empresa San Luis - Líderes en Hidrocarburos, Lubricantes, Suministros y Transporte. Soluciones energéticas integrales para el desarrollo sostenible." />
-    <meta data-mgx-overview="og:image" property="og:image" content="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />
-    <meta data-mgx-overview="twitter:title" name="twitter:title" content="Empresa San Luis - Soluciones Energéticas Integrales" />
-    <meta data-mgx-overview="twitter:description" name="twitter:description" content="Empresa San Luis - Líderes en Hidrocarburos, Lubricantes, Suministros y Transporte. Soluciones energéticas integrales para el desarrollo sostenible." />
-    <meta data-mgx-overview="twitter:image" name="twitter:image" content="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />
+    <meta name="description" content="Grupo San Luis - Líderes en Hidrocarburos, Suministros y Transporte. Soluciones energéticas integrales para el desarrollo sostenible." />
+    <meta property="og:title" content="Grupo San Luis - Soluciones Energéticas Integrales" />
+    <meta property="og:description" content="Grupo San Luis - Líderes en Hidrocarburos, Suministros y Transporte. Soluciones energéticas integrales." />
+    <meta property="og:image" content="./logo.png" />
+    <meta name="twitter:title" content="Grupo San Luis - Soluciones Energéticas Integrales" />
+    <meta name="twitter:description" content="Grupo San Luis - Líderes en Hidrocarburos, Suministros y Transporte." />
+    <meta name="twitter:image" content="./logo.png" />
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- ===== HEADER ===== -->
     <header class="header" id="header">
         <div class="header__container">
-            <a href="#" class="header__logo">
-                <img src="./logo.png" alt="Empresa San Luis - Logotipo" class="header__logo-img">
+            <a href="/" class="header__logo">
+                <img src="./logo.png" alt="Grupo San Luis - Logotipo" class="header__logo-img">
             </a>
             <nav class="header__nav" id="nav-menu">
                 <ul class="header__nav-list">
-                    <li><a href="#inicio" class="header__nav-link active">Inicio</a></li>
+                    <li><a href="/" class="header__nav-link active">Inicio</a></li>
                     <li><a href="#unidades" class="header__nav-link">Unidades de Negocio</a></li>
                     <li><a href="#nosotros" class="header__nav-link">Nosotros</a></li>
                     <li><a href="#sostenibilidad" class="header__nav-link">Sostenibilidad</a></li>
@@ -47,18 +49,22 @@
         </div>
     </header>
 
+    <!-- Overlay for mobile nav -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+
     <main>
-        <!-- Hero Section -->
+        <!-- ===== HERO SECTION ===== -->
         <section class="hero" id="inicio">
             <div class="hero__carousel" id="hero-carousel">
                 <div class="hero__slide hero__slide--active" data-slide="0">
-                    <div class="hero__slide-bg hero__slide-bg--1">
-                        
-                    </div>
+                    <div class="hero__slide-bg hero__slide-bg--1"></div>
                     <div class="hero__slide-content">
-                        <h1 class="hero__title">Energía que impulsa el futuro</h1>
-                        <p class="hero__subtitle">Soluciones integrales en hidrocarburos, lubricantes, suministros y transporte para el desarrollo sostenible de la región.</p>
-                        <a href="#unidades" class="hero__cta m3-button">Conoce nuestras soluciones</a>
+                        <span class="hero__badge" data-aos="fade-down" data-aos-delay="100">Grupo San Luis</span>
+                        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">Energía que impulsa el futuro</h1>
+                        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="300">Soluciones integrales en hidrocarburos, suministros y transporte para el desarrollo sostenible de la región.</p>
+                        <div data-aos="fade-up" data-aos-delay="400">
+                            <a href="#unidades" class="hero__cta m3-button">Conoce nuestras soluciones</a>
+                        </div>
                     </div>
                 </div>
                 <div class="hero__slide" data-slide="1">
@@ -69,23 +75,28 @@
                         <div class="hero__video-overlay"></div>
                     </div>
                     <div class="hero__slide-content">
-                        <h1 class="hero__title">000Compromiso con la excelencia</h1>
-                        <p class="hero__subtitle">Más de 20 años brindando servicios de calidad con responsabilidad social y ambiental.</p>
-                        <a href="#nosotros" class="hero__cta m3-button">Descubre nuestra historia</a>
+                        <span class="hero__badge" data-aos="fade-down" data-aos-delay="100">Trayectoria</span>
+                        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">Compromiso con la excelencia</h1>
+                        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="300">Más de 20 años brindando servicios de calidad con responsabilidad social y ambiental.</p>
+                        <div data-aos="fade-up" data-aos-delay="400">
+                            <a href="#nosotros" class="hero__cta m3-button">Descubre nuestra historia</a>
+                        </div>
                     </div>
                 </div>
                 <div class="hero__slide" data-slide="2">
-                    <!-- <div class="hero__slide-bg hero__slide-bg--3"></div> -->
-                     <div class="hero__slide-bg hero__slide-bg--video">
+                    <div class="hero__slide-bg hero__slide-bg--video">
                         <video class="hero__video-bg" autoplay muted loop playsinline preload="metadata" poster="./logo.png">
                             <source src="./video/dji-0478_ON6eDhfO.mp4" type="video/mp4">
                         </video>
                         <div class="hero__video-overlay"></div>
                     </div>
                     <div class="hero__slide-content">
-                        <h1 class="hero__title">Innovación en cada operación</h1>
-                        <p class="hero__subtitle">Tecnología de punta y procesos certificados que garantizan la máxima eficiencia.</p>
-                        <a href="#contacto" class="hero__cta m3-button">Trabaja con nosotros</a>
+                        <span class="hero__badge" data-aos="fade-down" data-aos-delay="100">Innovación</span>
+                        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">Innovación en cada operación</h1>
+                        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="300">Tecnología de punta y procesos certificados que garantizan la máxima eficiencia.</p>
+                        <div data-aos="fade-up" data-aos-delay="400">
+                            <a href="#contacto" class="hero__cta m3-button">Trabaja con nosotros</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,15 +115,17 @@
             </div>
         </section>
 
-        <!-- Business Units Section -->
+        <!-- ===== BUSINESS UNITS SECTION ===== -->
         <section class="units" id="unidades">
             <div class="units__container">
-                <div class="units__header">
+                <div class="units__header" data-aos="fade-up">
                     <h2 class="section-title">Unidades de Negocio</h2>
-                    <p class="section-subtitle">Cuatro divisiones operativas que trabajan en sinergia para ofrecer soluciones energéticas integrales.</p>
+                    <p class="section-subtitle">Tres divisiones operativas que trabajan en sinergia para ofrecer soluciones energéticas integrales.</p>
                 </div>
                 <div class="units__grid">
-                    <article class="unit-card m3-container" data-unit="hidrocarburos">
+                    <!-- Hidrocarburos -->
+                    <article class="unit-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="unit-card__badge">01</div>
                         <div class="unit-card__icon">
                             <svg viewBox="0 0 64 64" width="64" height="64">
                                 <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
@@ -121,12 +134,19 @@
                                 <circle cx="32" cy="28" r="3" fill="currentColor"/>
                             </svg>
                         </div>
-                        <!-- Placeholder: Insertar logo variante Hidrocarburos -->
-                        <h3 class="unit-card__title">Distribuidora de Hidrocarburos San Luis</h3>
-                        <p class="unit-card__description">Distribución y comercialización de combustibles con la más alta calidad y estándares de seguridad para el sector industrial y comercial.</p>
-                        <a href="#" class="unit-card__link">Conocer más →</a>
+                        <h3 class="unit-card__title">Hidrocarburos</h3>
+                        <p class="unit-card__description">Distribución y comercialización de combustibles con los más altos estándares de calidad y seguridad para el sector industrial y comercial.</p>
+                        <div class="unit-card__features">
+                            <span class="unit-card__feature">Distribución</span>
+                            <span class="unit-card__feature">Almacenamiento</span>
+                            <span class="unit-card__feature">Seguridad</span>
+                        </div>
+                        <a href="/hidrocarburos" class="unit-card__btn m3-button">Conocer más</a>
                     </article>
-                    <article class="unit-card m3-container" data-unit="suministros">
+
+                    <!-- Suministros -->
+                    <article class="unit-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="unit-card__badge">02</div>
                         <div class="unit-card__icon">
                             <svg viewBox="0 0 64 64" width="64" height="64">
                                 <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
@@ -136,12 +156,19 @@
                                 <line x1="28" y1="32" x2="36" y2="32" stroke="currentColor" stroke-width="2"/>
                             </svg>
                         </div>
-                        <!-- Placeholder: Insertar logo variante Suministros -->
-                        <h3 class="unit-card__title">Suministros (San Luis Suministros)</h3>
+                        <h3 class="unit-card__title">Suministros</h3>
                         <p class="unit-card__description">Provisión integral de insumos y materiales para operaciones industriales, garantizando disponibilidad y logística eficiente.</p>
-                        <a href="#" class="unit-card__link">Conocer más →</a>
+                        <div class="unit-card__features">
+                            <span class="unit-card__feature">Cadena de Abasto</span>
+                            <span class="unit-card__feature">Logística</span>
+                            <span class="unit-card__feature">Calidad</span>
+                        </div>
+                        <a href="/suministros" class="unit-card__btn m3-button">Conocer más</a>
                     </article>
-                    <article class="unit-card m3-container" data-unit="transporte">
+
+                    <!-- Transporte -->
+                    <article class="unit-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="unit-card__badge">03</div>
                         <div class="unit-card__icon">
                             <svg viewBox="0 0 64 64" width="64" height="64">
                                 <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
@@ -151,51 +178,54 @@
                                 <circle cx="44" cy="42" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
                             </svg>
                         </div>
-                        <!-- Placeholder: Insertar logo variante Transporte -->
-                        <h3 class="unit-card__title">Transporte (Transporte San Luis):</h3>
-                        <p class="unit-card__description">Flota moderna y especializada para el transporte seguro de hidrocarburos y materiales peligrosos con cobertura nacional.</p>
-                        <a href="#" class="unit-card__link">Conocer más →</a>
+                        <h3 class="unit-card__title">Transporte</h3>
+                        <p class="unit-card__description">Flota moderna y especializada para el transporte seguro de hidrocarburos y materiales con cobertura nacional y monitoreo en tiempo real.</p>
+                        <div class="unit-card__features">
+                            <span class="unit-card__feature">Flota Moderna</span>
+                            <span class="unit-card__feature">Cobertura Nacional</span>
+                            <span class="unit-card__feature">Monitoreo GPS</span>
+                        </div>
+                        <a href="/transporte" class="unit-card__btn m3-button">Conocer más</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- About Us Section -->
+        <!-- ===== ABOUT US SECTION ===== -->
         <section class="about" id="nosotros">
             <div class="about__container">
-                <div class="about__content">
+                <div class="about__content" data-aos="fade-right">
                     <h2 class="section-title">Quiénes Somos</h2>
-                    <p class="about__text">Empresa San Luis es un grupo empresarial con más de dos décadas de trayectoria en el sector energético e industrial. Nuestra visión integral nos permite ofrecer soluciones completas que abarcan desde la distribución de hidrocarburos hasta el transporte especializado.</p>
+                    <p class="about__text">Grupo San Luis es un grupo empresarial con más de dos décadas de trayectoria en el sector energético e industrial. Nuestra visión integral nos permite ofrecer soluciones completas que abarcan desde la distribución de hidrocarburos hasta el transporte especializado.</p>
                     <p class="about__text">Con presencia en múltiples regiones del país, nos distinguimos por nuestro compromiso con la calidad, la seguridad operacional y el desarrollo sostenible de las comunidades donde operamos.</p>
                     <div class="about__stats">
-                        <div class="about__stat">
+                        <div class="about__stat" data-aos="zoom-in" data-aos-delay="100">
                             <span class="about__stat-number" data-target="20">0</span>
                             <span class="about__stat-suffix">+</span>
                             <span class="about__stat-label">Años de experiencia</span>
                         </div>
-                        <div class="about__stat">
+                        <div class="about__stat" data-aos="zoom-in" data-aos-delay="200">
                             <span class="about__stat-number" data-target="500">0</span>
                             <span class="about__stat-suffix">+</span>
                             <span class="about__stat-label">Colaboradores</span>
                         </div>
-                        <div class="about__stat">
-                            <span class="about__stat-number" data-target="4">0</span>
+                        <div class="about__stat" data-aos="zoom-in" data-aos-delay="300">
+                            <span class="about__stat-number" data-target="3">0</span>
                             <span class="about__stat-suffix"></span>
                             <span class="about__stat-label">Unidades de negocio</span>
                         </div>
-                        <div class="about__stat">
+                        <div class="about__stat" data-aos="zoom-in" data-aos-delay="400">
                             <span class="about__stat-number" data-target="15">0</span>
                             <span class="about__stat-suffix">+</span>
                             <span class="about__stat-label">Regiones atendidas</span>
                         </div>
                     </div>
                 </div>
-                <div class="about__visual">
-                    <!-- Placeholder: Insertar imagen corporativa o video institucional -->
+                <div class="about__visual" data-aos="fade-left">
                     <div class="about__image-placeholder">
                         <svg viewBox="0 0 400 300" width="100%" height="100%">
                             <rect width="400" height="300" fill="#003366" rx="32"/>
-                            <text x="200" y="140" text-anchor="middle" fill="#95c800" font-size="18" font-family="Rubik">EMPRESA SAN LUIS</text>
+                            <text x="200" y="140" text-anchor="middle" fill="#95c800" font-size="18" font-family="Rubik">GRUPO SAN LUIS</text>
                             <text x="200" y="170" text-anchor="middle" fill="#ffffff" font-size="12" font-family="Rubik">Imagen Corporativa</text>
                         </svg>
                     </div>
@@ -203,13 +233,13 @@
             </div>
         </section>
 
-        <!-- Sustainability Section -->
+        <!-- ===== SUSTAINABILITY SECTION ===== -->
         <section class="sustainability" id="sostenibilidad">
             <div class="sustainability__container">
-                <h2 class="section-title section-title--light">Sostenibilidad</h2>
-                <p class="section-subtitle section-subtitle--light">Comprometidos con el medio ambiente y el desarrollo responsable de nuestras operaciones.</p>
+                <h2 class="section-title section-title--light" data-aos="fade-up">Sostenibilidad</h2>
+                <p class="section-subtitle section-subtitle--light" data-aos="fade-up" data-aos-delay="100">Comprometidos con el medio ambiente y el desarrollo responsable de nuestras operaciones.</p>
                 <div class="sustainability__grid">
-                    <div class="sustainability__item">
+                    <div class="sustainability__item glass-card-dark" data-aos="fade-up" data-aos-delay="100">
                         <div class="sustainability__icon">
                             <svg viewBox="0 0 48 48" width="48" height="48">
                                 <path d="M24 4C12 4 8 16 8 24c0 8 6 16 16 20 10-4 16-12 16-20 0-8-4-20-16-20z" fill="none" stroke="currentColor" stroke-width="2"/>
@@ -219,7 +249,7 @@
                         <h3 class="sustainability__title">Gestión Ambiental</h3>
                         <p class="sustainability__text">Implementamos sistemas de gestión ambiental certificados que minimizan nuestro impacto ecológico en cada operación.</p>
                     </div>
-                    <div class="sustainability__item">
+                    <div class="sustainability__item glass-card-dark" data-aos="fade-up" data-aos-delay="200">
                         <div class="sustainability__icon">
                             <svg viewBox="0 0 48 48" width="48" height="48">
                                 <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
@@ -229,7 +259,7 @@
                         <h3 class="sustainability__title">Seguridad Operacional</h3>
                         <p class="sustainability__text">Protocolos de seguridad de clase mundial que protegen a nuestros colaboradores, comunidades y el entorno natural.</p>
                     </div>
-                    <div class="sustainability__item">
+                    <div class="sustainability__item glass-card-dark" data-aos="fade-up" data-aos-delay="300">
                         <div class="sustainability__icon">
                             <svg viewBox="0 0 48 48" width="48" height="48">
                                 <path d="M12 36V20l12-8 12 8v16" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
@@ -244,10 +274,10 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- ===== CONTACT SECTION ===== -->
         <section class="contact" id="contacto">
             <div class="contact__container">
-                <div class="contact__info">
+                <div class="contact__info" data-aos="fade-right">
                     <h2 class="section-title">Contáctenos</h2>
                     <p class="contact__text">Estamos listos para atender sus requerimientos. Comuníquese con nosotros y un asesor especializado le brindará la mejor solución.</p>
                     <div class="contact__details">
@@ -255,58 +285,82 @@
                             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
                             </svg>
-                            <span>+58 (0000) 234-5678</span>
+                            <span>+58 (251) 234-5678</span>
                         </div>
                         <div class="contact__detail">
                             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                                 <polyline points="22,6 12,13 2,6"/>
                             </svg>
-                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="96f5f9f8e2f7f5e2f9d6f3fbe6e4f3e5f7e5f7f8fae3ffe5b8f5f9fb">contacto@gruposanluis.com</a></span>
+                            <span>desarrollo.corpoagro@gmail.com</span>
                         </div>
                         <div class="contact__detail">
                             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
                                 <circle cx="12" cy="10" r="3"/>
                             </svg>
-                            <span>Av. Principal las industrias, Zona Industrial II  Barquisimeto Venezuela</span>
+                            <span>Av. Principal las industrias, Zona Industrial II, Barquisimeto - Venezuela</span>
                         </div>
                     </div>
                 </div>
-                <form class="contact__form" id="contact-form">
+                <form class="contact__form" id="contact-form" data-aos="fade-left" novalidate>
                     <div class="contact__form-group">
-                        <input type="text" id="name" name="name" placeholder="Nombre completo" required class="contact__input">
+                        <input type="text" id="name" name="name" placeholder="Nombre completo" required class="contact__input" autocomplete="name">
+                        <span class="contact__input-message"></span>
                     </div>
                     <div class="contact__form-group">
-                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required class="contact__input">
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required class="contact__input" autocomplete="email">
+                        <span class="contact__input-message"></span>
                     </div>
                     <div class="contact__form-group">
-                        <select id="subject" name="subject" required class="contact__input">
-                            <option value="" disabled selected>Seleccione un tema</option>
-                            <option value="hidrocarburos">Hidrocarburos</option>
-                            <option value="lubricantes">Lubricantes</option>
-                            <option value="suministros">Suministros</option>
-                            <option value="transporte">Transporte</option>
-                            <option value="otro">Otro</option>
+                        <input type="tel" id="phone" name="phone" placeholder="Teléfono" class="contact__input" autocomplete="tel">
+                        <span class="contact__input-message"></span>
+                    </div>
+                    <div class="contact__form-group">
+                        <select id="unidad" name="unidad" required class="contact__input">
+                            <option value="" disabled selected>Unidad de Negocio de interés</option>
+                            <option value="Hidrocarburos">Hidrocarburos</option>
+                            <option value="Suministros">Suministros</option>
+                            <option value="Transporte">Transporte</option>
+                            <option value="General">Consulta General</option>
                         </select>
+                        <span class="contact__input-message"></span>
                     </div>
                     <div class="contact__form-group">
                         <textarea id="message" name="message" placeholder="Su mensaje" rows="4" required class="contact__textarea"></textarea>
+                        <span class="contact__input-message"></span>
                     </div>
-                    <button type="submit" class="contact__submit m3-button">Enviar mensaje</button>
+                    <button type="submit" class="contact__submit m3-button" id="form-submit-btn">
+                        <span class="btn-text">Enviar mensaje</span>
+                        <span class="btn-spinner">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="31.4 31.4" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="contact__toast" id="form-toast">
+                        <div class="contact__toast-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </div>
+                        <div class="contact__toast-content">
+                            <span class="contact__toast-title">¡Mensaje enviado!</span>
+                            <span class="contact__toast-text">Nos pondremos en contacto pronto.</span>
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="footer__container">
-            <div class="footer__col">
+            <div class="footer__col" data-aos="fade-up">
                 <div class="footer__logo">
-                    <!-- Placeholder: Insertar logotipo San Luis versión negativo/blanco -->
                     <div class="footer__logo-placeholder">
-                        <span class="logo-text logo-text--light">SAN LUIS</span>
+                        <span class="logo-text logo-text--light">GRUPO SAN LUIS</span>
                     </div>
                 </div>
                 <p class="footer__tagline">Soluciones energéticas integrales para el desarrollo sostenible.</p>
@@ -325,40 +379,42 @@
                     </a>
                 </div>
             </div>
-            <div class="footer__col">
+            <div class="footer__col" data-aos="fade-up" data-aos-delay="100">
                 <h4 class="footer__heading">Enlaces</h4>
                 <ul class="footer__links">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#nosotros">Quiénes Somos</a></li>
-                    <li><a href="#sostenibilidad">Sostenibilidad</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/#nosotros">Quiénes Somos</a></li>
+                    <li><a href="/#sostenibilidad">Sostenibilidad</a></li>
+                    <li><a href="/#contacto">Contacto</a></li>
                 </ul>
             </div>
-            <div class="footer__col">
+            <div class="footer__col" data-aos="fade-up" data-aos-delay="200">
                 <h4 class="footer__heading">Unidades de Negocio</h4>
                 <ul class="footer__links">
-                    <li><a href="#">Hidrocarburos</a></li>
-                    <li><a href="#">Lubricantes</a></li>
-                    <li><a href="#">Suministros</a></li>
-                    <li><a href="#">Transporte</a></li>
+                    <li><a href="/hidrocarburos">Hidrocarburos</a></li>
+                    <li><a href="/suministros">Suministros</a></li>
+                    <li><a href="/transporte">Transporte</a></li>
                 </ul>
             </div>
-            <div class="footer__col">
+            <div class="footer__col" data-aos="fade-up" data-aos-delay="300">
                 <h4 class="footer__heading">Contacto</h4>
                 <ul class="footer__links footer__links--contact">
-                    <li>Av. Principal #123</li>
-                    <li>Zona Industrial</li>
+                    <li>Av. Principal las industrias</li>
+                    <li>Zona Industrial II, Barquisimeto</li>
                     <li>Tel: +58 (251) 234-5678</li>
-                    <li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="41222e2f352022352e01242c313324322032202f2d3428326f222e2c">[email&#160;protected]</a></li>
+                    <li><a href="mailto:desarrollo.corpoagro@gmail.com">desarrollo.corpoagro@gmail.com</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer__bottom">
-            <p>&copy; 2026 Empresa San Luis. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Grupo San Luis. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="./script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 
 </html>
+

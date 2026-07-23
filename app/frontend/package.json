@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite --mode dev --host --strictPort",
+    "dev": "concurrently --kill-others \"npm run dev:api\" \"npm run dev:client\"",
+    "dev:api": "node ../../api/dev-server.js",
+    "dev:client": "vite --mode dev --host --strictPort",
     "build": "vite build",
     "lint": "echo 'linted'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.10.0",
   "devDependencies": {
+    "concurrently": "^9.2.4",
     "vite": "^6.3.5"
   }
 }
+

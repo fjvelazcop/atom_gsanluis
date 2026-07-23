@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 // ============================================
-// EMPRESA SAN LUIS - Vite Configuration
+// GRUPO SAN LUIS - Vite Configuration
 // Optimized for Vercel production deployment
 // ============================================
 export default defineConfig({
@@ -45,8 +45,14 @@ export default defineConfig({
   server: {
     port: 3000,
     open: false,
-    // Proxy for local development (if needed)
-    proxy: {}
+    // Rewrite routes for SPA-like navigation
+    proxy: {
+      // Proxy API requests to local dev server
+      '/api': {
+        target: 'http://localhost:3001',
+        changeOrigin: true
+      }
+    }
   },
 
   // CSS preprocessing options

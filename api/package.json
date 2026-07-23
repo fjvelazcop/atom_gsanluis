@@ -1,0 +1,9 @@
+{
+  "name": "atom-grupo-san-luis-api",
+  "version": "1.0.0",
+  "description": "Serverless functions for Grupo San Luis contact form",
+  "main": "contact.js",
+  "dependencies": {
+    "nodemailer": "^9.0.3"
+  }
+}
