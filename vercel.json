@@ -1,12 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
-  "name": "empresa-san-luis",
   "framework": "vite",
-  "rootDirectory": "app/frontend",
-  "buildCommand": "pnpm install --frozen-lockfile && pnpm run build",
-  "outputDirectory": "dist",
-  "installCommand": "pnpm install --frozen-lockfile",
+  "buildCommand": "cd app/frontend && npm install && npm run build",
+  "outputDirectory": "app/frontend/dist",
+  "installCommand": "cd app/frontend && npm install",
   "rewrites": [
     {
       "source": "/(.*)",
