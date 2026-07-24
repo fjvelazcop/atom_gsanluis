@@ -1,23 +1,28 @@
-# 🏗️ Plan de Mejoras - Grupo San Luis
+# ✅ TODO - Implementación de Chatbot + Interactividad
 
-## Progreso
-- [x] Plan aprobado
-- [x] 1. Actualizar `index.html` — Cards glassmorphism, form mejorado, AOS
-- [x] 2. Crear `hidrocarburos.html` — Página individual
-- [x] 3. Crear `suministros.html` — Página individual
-- [x] 4. Crear `transporte.html` — Página individual
-- [x] 5. Actualizar `style.css` — Glassmorphism, dorado, validación, AOS
-- [x] 6. Crear `unidad.css` — Estilos compartidos de unidades
-- [x] 7. Actualizar `script.js` — Formulario Formspree, validación, AOS
-- [x] 8. Crear `unidad-script.js` — JS compartido para páginas de unidad
-- [x] 9. Actualizar `vercel.json` — Rewrites para rutas
-- [x] 10. Actualizar `vite.config.js` — Configure dev server
-- [x] 11. Crear serverless function `api/contact.js` con Nodemailer
-- [x] 12. Actualizar `script.js` para apuntar a `/api/contact`
-- [x] 13. Actualizar `vercel.json` con rutas de API y config de función
-- [x] 14. Configurar variables de entorno en Vercel (CONTACT_EMAIL, SMTP_*)
-- [x] 15. Crear `api/dev-server.js` y proxy en Vite para desarrollo local
-- [x] 16. Instalar `concurrently` para ejecutar API + Vite simultáneamente
-- [x] 17. Crear `app/.env` local para desarrollo
-- [ ] 18. Ejecutar proyecto localmente para verificar (comando: `npm run dev` en `app/frontend/`)
+## Fase 1: Google Sheets FAQ ✅
+- [x] 1.1 Crear documentación de template de Google Sheets (`GOOGLE_SHEETS_GUIDE.md`)
+- [x] 1.2 Crear Google Apps Script para publicar Sheet como API REST JSON
+
+## Fase 2: Chatbot Widget ✅
+- [x] 2.1 Crear `chat-widget.css` - Estilos del widget flotante
+- [x] 2.2 Crear `chat-widget.js` - Lógica del chatbot (IIFE, auto-init)
+- [x] 2.3 Crear `chat-data.js` - Datos FAQ embebidos (16 preguntas + matching semántico + Google Sheets API)
+
+## Fase 3: Integración en páginas HTML ✅
+- [x] 3.1 Integrar chatbot en `index.html` (CSS + JS)
+- [x] 3.2 Integrar chatbot en `hidrocarburos.html`
+- [x] 3.3 Integrar chatbot en `suministros.html`
+- [x] 3.4 Integrar chatbot en `transporte.html`
+
+## Fase 4: Características interactivas adicionales ✅
+- [x] 4.1 Guía completa de conexión a Google Sheets (`GOOGLE_SHEETS_GUIDE.md`)
+- [x] 4.2 Fallback: formulario de contacto dentro del chat si no encuentra respuesta
+- [x] 4.3 Botones de preguntas rápidas (quick replies) contextuales
+- [x] 4.4 Datos FAQ precargados para modo offline/local (USE_LOCAL_ONLY = true)
+
+## Pendiente (cuando tengas Google Sheet)
+- [ ] Publicar Google Sheet como Web App (Apps Script)
+- [ ] Cambiar `USE_LOCAL_ONLY: false` en `chat-data.js`
+- [ ] Pegar URL de la API en `SHEETS_API_URL`
 
