@@ -3,7 +3,7 @@
 // Static asset caching + offline support
 // ============================================
 
-const CACHE_NAME = 'san-luis-v1';
+const CACHE_NAME = 'san-luis-v2';
 
 // En desarrollo (Vite) desactivamos el caché del Service Worker para que los cambios se vean inmediato.
 const IS_DEV = (self.location && self.location.hostname) && (self.location.hostname === 'localhost' || self.location.hostname === '127.0.0.1');
@@ -96,7 +96,7 @@ self.addEventListener('fetch', function (event) {
                     .then(function (networkResponse) {
                         // Cache successful responses for future use
                         if (networkResponse && networkResponse.status === 200) {
-                            var responseClone = networkResponse.clone();
+                            const responseClone = networkResponse.clone();
                             caches.open(CACHE_NAME)
                                 .then(function (cache) {
                                     cache.put(event.request, responseClone);

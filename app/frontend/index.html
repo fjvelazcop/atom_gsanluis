@@ -12,17 +12,83 @@
     <link rel="manifest" href="./manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload Google Fonts for better LCP -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" as="style" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- AOS CSS (Animate On Scroll) -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="canonical" href="https://gruposanluis.com.ve/" />
     <meta name="description" content="Grupo San Luis - Líderes en Hidrocarburos, Suministros y Transporte. Soluciones energéticas integrales para el desarrollo sostenible." />
     <meta property="og:title" content="Grupo San Luis - Soluciones Energéticas Integrales" />
     <meta property="og:description" content="Grupo San Luis - Líderes en Hidrocarburos, Suministros y Transporte. Soluciones energéticas integrales." />
-    <meta property="og:image" content="./logo.png" />
+    <meta property="og:image" content="https://gruposanluis.com.ve/logo.png" />
+    <meta property="og:url" content="https://gruposanluis.com.ve/" />
+    <meta property="og:type" content="website" />
     <meta name="twitter:title" content="Grupo San Luis - Soluciones Energéticas Integrales" />
     <meta name="twitter:description" content="Grupo San Luis - Líderes en Hidrocarburos, Suministros y Transporte." />
-    <meta name="twitter:image" content="./logo.png" />
+    <meta name="twitter:image" content="https://gruposanluis.com.ve/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Grupo San Luis",
+      "url": "https://gruposanluis.com.ve",
+      "logo": "https://gruposanluis.com.ve/logo.png",
+      "description": "Soluciones energéticas integrales en hidrocarburos, suministros y transporte para el desarrollo sostenible.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Principal las industrias, Zona Industrial II",
+        "addressLocality": "Barquisimeto",
+        "addressCountry": "VE"
+      },
+      "telephone": "+58-251-234-5678",
+      "email": "contacto@gruposanluis.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+58-251-234-5678",
+        "contactType": "customer service",
+        "availableLanguage": ["es"]
+      },
+      "sameAs": [
+        "https://facebook.com/gruposanluis",
+        "https://linkedin.com/company/gruposanluis",
+        "https://instagram.com/gruposanluis"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Unidades de Negocio",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Hidrocarburos",
+              "description": "Distribución y comercialización de combustibles con altos estándares de calidad y seguridad."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Suministros",
+              "description": "Provisión integral de insumos y materiales para operaciones industriales."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Transporte",
+              "description": "Flota moderna para transporte seguro de hidrocarburos y materiales con monitoreo en tiempo real."
+            }
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -69,7 +135,7 @@
                 </div>
                 <div class="hero__slide" data-slide="1">
                     <div class="hero__slide-bg hero__slide-bg--video">
-                        <video class="hero__video-bg" autoplay muted loop playsinline preload="metadata" poster="./logo.png">
+                        <video class="hero__video-bg" autoplay muted loop playsinline preload="metadata" poster="./logo.png" loading="lazy">
                             <source src="./video/dji-0451_QCqUDQwQ.mp4" type="video/mp4">
                         </video>
                         <div class="hero__video-overlay"></div>
@@ -85,7 +151,7 @@
                 </div>
                 <div class="hero__slide" data-slide="2">
                     <div class="hero__slide-bg hero__slide-bg--video">
-                        <video class="hero__video-bg" autoplay muted loop playsinline preload="metadata" poster="./logo.png">
+                        <video class="hero__video-bg" autoplay muted loop playsinline preload="metadata" poster="./logo.png" loading="lazy">
                             <source src="./video/dji-0478_ON6eDhfO.mp4" type="video/mp4">
                         </video>
                         <div class="hero__video-overlay"></div>

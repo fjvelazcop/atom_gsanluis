@@ -17,6 +17,17 @@
     position: absolute;
     inset: 0;
     z-index: -1;
+}
+
+.unidad-hero__bg--suministros {
+    background: linear-gradient(135deg, #003366 0%, #1a4a6e 50%, #0d2137 100%);
+}
+
+.unidad-hero__bg--transporte {
+    background: linear-gradient(135deg, #002244 0%, #1a3a5c 50%, #0a1828 100%);
+}
+
+.unidad-hero__bg--default {
     background: linear-gradient(135deg, #003366 0%, #004d99 50%, #001a33 100%);
 }
 

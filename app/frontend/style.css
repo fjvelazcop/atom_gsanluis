@@ -1177,6 +1177,80 @@ img {
 }
 
 /* ============================================
+   Accessibility & Focus Indicators
+   ============================================ */
+
+/* Skip to content link (hidden until focused) */
+.skip-to-content {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 10000;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-principal);
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 0 0 1rem 0;
+    transition: top 0.2s ease;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* Visible focus indicators for keyboard navigation */
+:focus-visible {
+    outline: 3px solid var(--color-secundario);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Better contrast for muted text */
+.section-subtitle {
+    color: hsl(240, 8%, 30%);
+}
+
+.about__text,
+.contact__text,
+.unit-card__description,
+.unidad-overview__text,
+.unidad-detail-card__text {
+    color: hsl(240, 8%, 25%);
+}
+
+.about__stat-label,
+.unidad-stat__label {
+    color: hsl(240, 8%, 35%);
+}
+
+/* Footer link contrast */
+.footer__links a,
+.footer__links li {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.footer__tagline {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* Ensure sufficient contrast on hero text */
+.hero__subtitle {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ============================================
    Utility Animations
    ============================================ */
 @keyframes fadeInUp {

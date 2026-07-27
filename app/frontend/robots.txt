@@ -1,0 +1,7 @@
+# Grupo San Luis - Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://gruposanluis.com.ve/sitemap.xml
+
