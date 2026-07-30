@@ -43,8 +43,13 @@
 
     <main>
         <!-- ===== HERO ===== -->
-        <section class="unidad-hero" id="hero" style="--hero-gradient: linear-gradient(135deg, #002244 0%, #1a3a5c 50%, #0a1828 100%);">
-            <div class="unidad-hero__bg" style="background: var(--hero-gradient);"></div>
+        <section class="unidad-hero" id="hero">
+            <div class="unidad-hero__bg unidad-hero__bg--video">
+                <video class="unidad-hero__video" autoplay muted loop playsinline poster="./logo.png">
+                    <source src="./video/VIDEO%20TRANSPORTE%20SAN%20LUIS%20.mp4" type="video/mp4">
+                </video>
+                <div class="unidad-hero__overlay"></div>
+            </div>
             <div class="unidad-hero__content">
                 <span class="unidad-hero__badge" data-aos="fade-down">Unidad de Negocio</span>
                 <h1 class="unidad-hero__title" data-aos="fade-up" data-aos-delay="100">Transporte</h1>
