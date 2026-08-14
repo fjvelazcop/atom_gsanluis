@@ -56,6 +56,17 @@ export default defineConfig({
   server: {
     port: 3000,
     open: false,
+    // Hot Module Replacement configuration
+    hmr: {
+      host: 'localhost',
+      port: 3000,
+      protocol: 'ws'
+    },
+    // Enable file watching
+    watch: {
+      usePolling: true,
+      interval: 100
+    },
     // Rewrite routes for SPA-like navigation
     proxy: {
       // Proxy API requests to local dev server
