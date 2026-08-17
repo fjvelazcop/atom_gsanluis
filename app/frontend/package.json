@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently --kill-others \"npm run dev:api\" \"npm run dev:client\"",
-    "dev:api": "node ../../api/dev-server.js",
-    "dev:client": "vite --mode dev --host --strictPort",
+    "dev:api": "node ../../api/dev-server.js 3002",
+    "dev:client": "vite --mode dev --host --strictPort --port 4173",
     "build": "vite build",
     "lint": "echo 'linted'"
   },

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import { existsSync, cpSync } from 'fs';
 import { glob } from 'glob';
 
 // ============================================
@@ -14,7 +15,21 @@ const htmlFiles = glob.sync('*.html').reduce((acc, file) => {
   return acc;
 }, {});
 
+function copyUploadsPlugin() {
+  const sourceDir = resolve(__dirname, 'uploads');
+  const targetDir = resolve(__dirname, 'dist', 'uploads');
+
+  return {
+    name: 'copy-uploads',
+    buildStart() {
+      if (!existsSync(sourceDir)) return;
+      cpSync(sourceDir, targetDir, { recursive: true, force: true });
+    }
+  };
+}
+
 export default defineConfig({
+  plugins: [copyUploadsPlugin()],
   // Base path for production (Vercel serves from root)
   base: '/',
 
@@ -54,13 +69,24 @@ export default defineConfig({
 
   // Development server options
   server: {
-    port: 3000,
+    port: 4173,
     open: false,
+    // Hot Module Replacement configuration
+    hmr: {
+      host: 'localhost',
+      port: 3000,
+      protocol: 'ws'
+    },
+    // Enable file watching
+    watch: {
+      usePolling: true,
+      interval: 100
+    },
     // Rewrite routes for SPA-like navigation
     proxy: {
       // Proxy API requests to local dev server
       '/api': {
-        target: 'http://localhost:3001',
+        target: 'http://localhost:3002',
         changeOrigin: true
       }
     }

@@ -37,7 +37,7 @@ module.exports = async function handler(req, res) {
     }
 
     // Email recipient from environment variable
-    const contactEmail = process.env.CONTACT_EMAIL || 'desarrollo.corpoagro@gmail.com';
+    const contactEmail = process.env.CONTACT_EMAIL || 'info.sls@sanluis.com.ve';
 
     // Create Nodemailer transporter
     const transporter = nodemailer.createTransport({
