@@ -18,7 +18,33 @@ document.addEventListener('DOMContentLoaded', function () {
     // Enhanced features
     initContactForm();
     initScrollAnimations();
+    initCatalogDownloads();
 });
+
+function initCatalogDownloads() {
+    const catalogLinks = document.querySelectorAll('[data-downloads]');
+
+    catalogLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const files = JSON.parse(this.getAttribute('data-downloads') || '[]');
+
+            files.forEach(function (file, index) {
+                setTimeout(function () {
+                    const anchor = document.createElement('a');
+                    anchor.href = file;
+                    anchor.download = file.split('/').pop();
+                    anchor.target = '_blank';
+                    anchor.rel = 'noopener noreferrer';
+                    document.body.appendChild(anchor);
+                    anchor.click();
+                    document.body.removeChild(anchor);
+                }, index * 200);
+            });
+        });
+    });
+}
 
 // ============================================
 // AOS Initialization
