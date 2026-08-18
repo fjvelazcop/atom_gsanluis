@@ -5,47 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#003366">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="icon" href="./logo.png" />
-    <title>Grupo San Luis — Soluciones Hidrocarburos, lubricantes Transporte</title>
-    <link rel="manifest" href="./manifest.json">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-    <!-- AOS CSS (Animate On Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <meta name="description" content="Información sobre las fortalezas, sectores atendidos y procedimientos de Grupo San Luis.">
+    <link rel="icon" href="./logo.png">
     <link rel="stylesheet" href="./style.css">
-    <meta name="description"
-        content="Grupo San Luis - Líderes en Hidrocarburos, Suministros y Transporte. Soluciones energéticas integrales para el desarrollo sostenible." />
-    <meta property="og:title" content="Grupo San Luis - Soluciones Energéticas Integrales" />
-    <meta property="og:description"
-        content="Grupo San Luis - Líderes en Hidrocarburos, Suministros y Transporte. Soluciones energéticas integrales." />
-    <meta property="og:image" content="./logo.png" />
-    <meta name="twitter:title" content="Grupo San Luis - Soluciones Energéticas Integrales" />
-    <meta name="twitter:description" content="Grupo San Luis - Líderes en Hidrocarburos, Suministros y Transporte." />
-    <meta name="twitter:image" content="./logo.png" />
+    <title>Grupo San Luis | Información</title>
 </head>
 
 <body>
-    <!-- ===== HEADER ===== -->
     <header class="header" id="header">
         <div class="header__container">
-            <a href="/" class="header__logo">
+            <a href="/" class="header__logo" aria-label="Grupo San Luis, inicio">
                 <img src="./logo.png" alt="Grupo San Luis - Logotipo" class="header__logo-img">
             </a>
-            <nav class="header__nav" id="nav-menu">
+            <nav class="header__nav" id="nav-menu" aria-label="Navegación principal">
                 <ul class="header__nav-list">
-                    <li><a href="/" class="header__nav-link active">Inicio</a></li>
-                    <li><a href="#unidades" class="header__nav-link">Unidades de Negocio</a></li>
-                    <li><a href="#nosotros" class="header__nav-link">Nosotros</a></li>
-                    <li><a href="#sostenibilidad" class="header__nav-link">Sostenibilidad</a></li>
-                    <li><a href="#contacto" class="header__nav-link header__nav-link--cta">Contáctenos</a></li>
+                    <li><a href="#fortalezas" class="header__nav-link active">Fortalezas</a></li>
+                    <li><a href="#sectores" class="header__nav-link">Sectores y SIAVCOM</a></li>
+                    <!-- <li><a href="#gasco" class="header__nav-link">Sistema GASCO</a></li> -->
+                    <li><a href="#contacto" class="header__nav-link header__nav-link--cta">Contacto</a></li>
                 </ul>
             </nav>
-            <button class="header__hamburger" id="hamburger" aria-label="Abrir menú de navegación">
+            <button class="header__hamburger" id="hamburger" type="button" aria-label="Abrir menú de navegación">
                 <span class="header__hamburger-line"></span>
                 <span class="header__hamburger-line"></span>
                 <span class="header__hamburger-line"></span>
@@ -53,158 +33,33 @@
         </div>
     </header>
 
-    <!-- Overlay for mobile nav -->
     <div class="nav-overlay" id="nav-overlay"></div>
 
-    <main>
-        <!-- ===== HERO SECTION ===== -->
-        <section class="hero" id="inicio">
-            <div class="hero__carousel" id="hero-carousel">
-                <div class="hero__slide hero__slide--active" data-slide="0">
-                    <div class="hero__slide-bg hero__slide-bg--1"></div>
-                    <div class="hero__slide-content">
-                        <span class="hero__badge" data-aos="fade-down" data-aos-delay="100">Grupo San Luis</span>
-                        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">Energía que impulsa el futuro
-                        </h1>
-                        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="300">Soluciones integrales en
-                            hidrocarburos, suministros y transporte para el desarrollo sostenible de la región.</p>
-                        <div data-aos="fade-up" data-aos-delay="400">
-                            <a href="#unidades" class="hero__cta m3-button">Conoce nuestras soluciones</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__slide" data-slide="1">
-                    <div class="hero__slide-bg hero__slide-bg--video">
-                        <video class="hero__video-bg" autoplay muted loop playsinline preload="metadata"
-                            poster="./logo.png">
-                            <source src="./video/dji-0451_QCqUDQwQ.mp4" type="video/mp4">
-                        </video>
-                        <div class="hero__video-overlay"></div>
-                    </div>
-                    <div class="hero__slide-content">
-                        <span class="hero__badge" data-aos="fade-down" data-aos-delay="100">Trayectoria</span>
-                        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">Compromiso con la excelencia
-                        </h1>
-                        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="300">Más de 20 años brindando
-                            servicios de calidad con responsabilidad social y ambiental.</p>
-                        <div data-aos="fade-up" data-aos-delay="400">
-                            <a href="#nosotros" class="hero__cta m3-button">Descubre nuestra historia</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__slide" data-slide="2">
-                    <div class="hero__slide-bg hero__slide-bg--video">
-                        <video class="hero__video-bg" autoplay muted loop playsinline preload="metadata"
-                            poster="./logo.png">
-                            <source src="./video/dji-0478_ON6eDhfO.mp4" type="video/mp4">
-                        </video>
-                        <div class="hero__video-overlay"></div>
-                    </div>
-                    <div class="hero__slide-content">
-                        <span class="hero__badge" data-aos="fade-down" data-aos-delay="100">Innovación</span>
-                        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">Innovación en cada operación
-                        </h1>
-                        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="300">Tecnología de punta y procesos
-                            certificados que garantizan la máxima eficiencia.</p>
-                        <div data-aos="fade-up" data-aos-delay="400">
-                            <a href="#contacto" class="hero__cta m3-button">Contáctenos</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__controls">
-                <button class="hero__control-btn hero__control-btn--prev" aria-label="Slide anterior">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                </button>
-                <div class="hero__indicators" id="hero-indicators">
-                    <button class="hero__indicator hero__indicator--active" data-index="0"
-                        aria-label="Ir a slide 1"></button>
-                    <button class="hero__indicator" data-index="1" aria-label="Ir a slide 2"></button>
-                    <button class="hero__indicator" data-index="2" aria-label="Ir a slide 3"></button>
-                </div>
-                <button class="hero__control-btn hero__control-btn--next" aria-label="Siguiente slide">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </button>
-            </div>
-        </section>
-
-        <!-- ===== BUSINESS UNITS SECTION ===== -->
-        <section class="units" id="unidades">
-            <div class="units__container">
-                <div class="units__header" data-aos="fade-up">
-                    <h2 class="section-title">Unidades de Negocio</h2>
-                    <p class="section-subtitle">Tres divisiones operativas que trabajan en sinergia para ofrecer
-                        soluciones energéticas integrales.</p>
-                </div>
-                <div class="units__grid">
-                    <!-- Hidrocarburos -->
-                    <article class="unit-card glass-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="unit-card__badge">01</div>
-                        <div class="unit-card__icon">
-                            <svg viewBox="0 0 64 64" width="64" height="64">
-                                <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2" />
-                                <path d="M24 44V28l8-8 8 8v16" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M28 44v-8h8v8" fill="none" stroke="currentColor" stroke-width="2" />
-                                <circle cx="32" cy="28" r="3" fill="currentColor" />
-                            </svg>
-                        </div>
-                        <h3 class="unit-card__title">Hidrocarburos</h3>
-                        <p class="unit-card__description">Distribución y comercialización de combustibles con los más
-                            altos estándares de calidad y seguridad para el sector industrial y comercial.</p>
-                        <div class="unit-card__features">
-                            <span class="unit-card__feature">Distribución</span>
-                            <span class="unit-card__feature">Almacenamiento</span>
-                            <span class="unit-card__feature">Seguridad</span>
-                        </div>
-                        <a href="/hidrocarburos" class="unit-card__btn m3-button">Conocer más</a>
+    <main class="info-main">
+        <section class="info-section info-section--intro" id="fortalezas">
+            <div class="info-section__container">
+                <p class="info-kicker">Grupo San Luis</p>
+                <h1 class="info-title">Fortalezas operativas</h1>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <h2>Transporte primario</h2>
+                        <p>Cuentan con flota propia de vehículos para transportar el combustible.</p>
                     </article>
+                    <article class="info-card">
+                        <h2>Flota de despacho</h2>
+                        <p>Tienen unidades modernas con capacidades que van desde los 9.600 litros hasta los 33.000 litros, con una capacidad total de 321.800 litros en una sola vuelta.</p>
+                    </article>
+                    <article class="info-card info-card--wide">
+                        <h2>Diésel doble filtrado</h2>
+                        <p>Poseen filtros especializados que:</p>
+                        <ul>
+                            <li>Mejoran el rendimiento del combustible.</li>
+                            <li>Aumentan la vida útil de los litros de gasoil/diésel.</li>
+                            <li>Reducen la obstrucción en quemadores.</li>
+                        </ul>
 
-                    <!-- Suministros -->
-                    <article class="unit-card glass-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="unit-card__badge">02</div>
-                        <div class="unit-card__icon">
-                            <!-- <svg viewBox="0 0 64 64" width="64" height="64">
-                                <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
-                                <rect x="22" y="24" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
-                                <path d="M26 24v-4h12v4" fill="none" stroke="currentColor" stroke-width="2"/>
-                                <line x1="32" y1="28" x2="32" y2="36" stroke="currentColor" stroke-width="2"/>
-                                <line x1="28" y1="32" x2="36" y2="32" stroke="currentColor" stroke-width="2"/>
-                            </svg> -->
-                            <svg viewBox="0 0 64 64" width="64" height="64">
-                                <!--  Círculo exterior  -->
-                                <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2" />
-                                <!--  Gota central  -->
-                                <path d="M32 16 c0 0-12 11-12 18 a12 12 0 0 0 24 0 c0-7-12-18-12-18 z" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-                                <!--  Detalle interno (brillo/gota menor)  -->
-                                <path d="M32 23 c0 0-6 6-6 10 a6 6 0 0 0 6 6" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" />
-                            </svg>
-                        </div>
-                        <h3 class="unit-card__title">Lubricantes y Repuestos</h3>
-                        <p class="unit-card__description">
-                            Somos distribuidores al mayor de productos lubricantes, filtros, amortiguadores y línea
-                            automotriz para flotas,
-                            talleres y distribuidores mayoristas.
-                            Lubricantes de marcas certificadas
-                            Filtros de aire, aceite y combustible
-                            Amortiguadores y suspensión
-                        </p>
-                        <div class="unit-card__features">
-                            <span class="unit-card__feature">Cadena de Repuestos</span>
-                            <span class="unit-card__feature">Automotriz</span>
-                            <span class="unit-card__feature">Calidad</span>
-                        </div>
-                        <!-- <a href="#" class="unit-card__btn m3-button"
-                            data-downloads='["/uploads/pdf/CATÁLOGO PDV Y PDVSSA SAN LUIS LUBRICANTES ACTUALIZACIÓN 14-08-26 (1).pdf","/uploads/pdf/CATALOGO SUMINSTROS 2026.pdf"]'>Conocer
-                            más</a>-->
 
-<a href="/uploads/pdf/catalogo-pdv-pdvssa-san-luis-lubricantes-2026.pdf"
+                        <a href="/uploads/pdf/catalogo-pdv-pdvssa-san-luis-lubricantes-2026.pdf"
    class="unit-card__btn m3-button"
    download="CATALOGO PDV Y PDVSSA SAN LUIS LUBRICANTES ACTUALIZACIÓN 14-08-26.pdf">
    Catálogo Lubricantes
@@ -215,304 +70,75 @@
    download="CATALOGO SUMINSTROS 2026.pdf">
    Catálogo Suministros
 </a>
-
-
-                    </article>
-
-                    <!-- Transporte -->
-                    <article class="unit-card glass-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="unit-card__badge">03</div>
-                        <div class="unit-card__icon">
-                            <svg viewBox="0 0 64 64" width="64" height="64">
-                                <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2" />
-                                <rect x="16" y="26" width="24" height="14" rx="2" fill="none" stroke="currentColor"
-                                    stroke-width="2" />
-                                <path d="M40 30h6l4 6v4h-10" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linejoin="round" />
-                                <circle cx="24" cy="42" r="3" fill="none" stroke="currentColor" stroke-width="2" />
-                                <circle cx="44" cy="42" r="3" fill="none" stroke="currentColor" stroke-width="2" />
-                            </svg>
-                        </div>
-                        <h3 class="unit-card__title">Transporte</h3>
-                        <p class="unit-card__description">Flota moderna y especializada para el transporte seguro de
-                            hidrocarburos y materiales con cobertura nacional y monitoreo en tiempo real.</p>
-                        <div class="unit-card__features">
-                            <span class="unit-card__feature">Flota Moderna</span>
-                            <span class="unit-card__feature">Cobertura Nacional</span>
-                            <span class="unit-card__feature">Monitoreo GPS</span>
-                        </div>
-                        <a href="/transporte" class="unit-card__btn m3-button">Conocer más</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- ===== ABOUT US SECTION ===== -->
-        <section class="about" id="nosotros">
-            <div class="about__container">
-                <div class="about__content" data-aos="fade-right">
-                    <h2 class="section-title">Quiénes Somos</h2>
-                    <p class="about__text">Grupo San Luis es un grupo empresarial con más de dos décadas de trayectoria
-                        en el sector energético e industrial. Nuestra visión integral nos permite ofrecer soluciones
-                        completas que abarcan desde la distribución de hidrocarburos hasta el transporte especializado.
-                    </p>
-                    <p class="about__text">Con presencia en múltiples regiones del país, nos distinguimos por nuestro
-                        compromiso con la calidad, la seguridad operacional y el desarrollo sostenible de las
-                        comunidades donde operamos.</p>
-                    <div class="about__stats">
-                        <div class="about__stat" data-aos="zoom-in" data-aos-delay="100">
-                            <span class="about__stat-number" data-target="20">0</span>
-                            <span class="about__stat-suffix">+</span>
-                            <span class="about__stat-label">Años de experiencia</span>
-                        </div>
-                        <div class="about__stat" data-aos="zoom-in" data-aos-delay="200">
-                            <span class="about__stat-number" data-target="500">0</span>
-                            <span class="about__stat-suffix">+</span>
-                            <span class="about__stat-label">Colaboradores</span>
-                        </div>
-                        <div class="about__stat" data-aos="zoom-in" data-aos-delay="300">
-                            <span class="about__stat-number" data-target="3">0</span>
-                            <span class="about__stat-suffix"></span>
-                            <span class="about__stat-label">Unidades de negocio</span>
-                        </div>
-                        <div class="about__stat" data-aos="zoom-in" data-aos-delay="400">
-                            <span class="about__stat-number" data-target="15">0</span>
-                            <span class="about__stat-suffix">+</span>
-                            <span class="about__stat-label">Regiones atendidas</span>
-                        </div>
-                    </div>
+        <section class="info-section" id="sectores">
+            <div class="info-section__container info-section__split">
+                <div>
+                    <p class="info-kicker">Cobertura</p>
+                    <h2 class="info-title">Sectores que atendemos y asignación SIAVCOM</h2>
                 </div>
-                <div class="about__visual" data-aos="fade-left">
-                    <div class="about__image-placeholder">
-                        <img src="./image/about-us.jpg" alt="Grupo San Luis - Imagen Corporativa" class="about__image">
-                    </div>
+                <div class="info-copy">
+                    <h3>Sectores que atienden</h3>
+                    <ul class="info-tags">
+                        <li>Residencial</li>
+                        <li>Comercial</li>
+                        <li>Industrial</li>
+                        <li>Agrícola</li>
+                        <li>Salud</li>
+                    </ul>
+                    <h3>Asignación en SIAVCOM</h3>
+                    <p><strong>Sistema de Asignación de Volúmenes de Combustibles Líquidos:</strong> Son la distribuidora más grande de Venezuela. Tienen más de 2.000 clientes. Manejan cerca de 30 millones de litros.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ===== SUSTAINABILITY SECTION ===== -->
-        <section class="sustainability" id="sostenibilidad">
-            <div class="sustainability__container">
-                <h2 class="section-title section-title--light" data-aos="fade-up">Sostenibilidad</h2>
-                <p class="section-subtitle section-subtitle--light" data-aos="fade-up" data-aos-delay="100">
-                    Comprometidos con el medio ambiente y el desarrollo responsable de nuestras operaciones.</p>
-                <div class="sustainability__grid">
-                    <div class="sustainability__item glass-card-dark" data-aos="fade-up" data-aos-delay="100">
-                        <div class="sustainability__icon">
-                            <svg viewBox="0 0 48 48" width="48" height="48">
-                                <path d="M24 4C12 4 8 16 8 24c0 8 6 16 16 20 10-4 16-12 16-20 0-8-4-20-16-20z"
-                                    fill="none" stroke="currentColor" stroke-width="2" />
-                                <path d="M24 12v20M18 18c4 2 8 2 12 0" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" />
-                            </svg>
-                        </div>
-                        <h3 class="sustainability__title">Gestión Ambiental</h3>
-                        <p class="sustainability__text">Implementamos sistemas de gestión ambiental certificados que
-                            minimizan nuestro impacto ecológico en cada operación.</p>
-                    </div>
-                    <div class="sustainability__item glass-card-dark" data-aos="fade-up" data-aos-delay="200">
-                        <div class="sustainability__icon">
-                            <svg viewBox="0 0 48 48" width="48" height="48">
-                                <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2" />
-                                <path d="M16 24l6 6 10-12" fill="none" stroke="currentColor" stroke-width="2.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <h3 class="sustainability__title">Seguridad Operacional</h3>
-                        <p class="sustainability__text">Protocolos de seguridad de clase mundial que protegen a nuestros
-                            colaboradores, comunidades y el entorno natural.</p>
-                    </div>
-                    <div class="sustainability__item glass-card-dark" data-aos="fade-up" data-aos-delay="300">
-                        <div class="sustainability__icon">
-                            <svg viewBox="0 0 48 48" width="48" height="48">
-                                <path d="M12 36V20l12-8 12 8v16" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linejoin="round" />
-                                <path d="M20 36v-8h8v8" fill="none" stroke="currentColor" stroke-width="2" />
-                                <circle cx="24" cy="22" r="3" fill="none" stroke="currentColor" stroke-width="2" />
-                            </svg>
-                        </div>
-                        <h3 class="sustainability__title">Desarrollo Comunitario</h3>
-                        <p class="sustainability__text">Programas de inversión social que fortalecen la educación, salud
-                            e infraestructura de las comunidades vecinas.</p>
-                    </div>
-                </div>
+        <!-- <section class="info-section info-section--dark" id="gasco">
+            <div class="info-section__container">
+                <p class="info-kicker">Procedimiento</p>
+                <h2 class="info-title info-title--light">Sistema GASCO</h2>
+                <p class="info-lead">Procedimiento de registro y asignación</p>
+                <ol class="info-steps">
+                    <li><strong>Registro:</strong> Ingresar al portal <a href="https://gasco.minhidrocarburos.gob.ve" target="_blank" rel="noopener noreferrer">gasco.minhidrocarburos.gob.ve</a> y cargar la documentación requerida.</li>
+                    <li><strong>Inspección Técnica:</strong> Tras completar el registro, el usuario recibirá un correo electrónico con la fecha de la visita técnica de inspección por parte del Ministerio de Hidrocarburos.</li>
+                    <li><strong>Aprobación:</strong> Al ser validados los estados de “Sede aprobada” y “Solicitud aprobada”, se podrán tramitar mensualmente los pedidos de diésel según el cupo asignado por la plataforma.</li>
+                </ol>
             </div>
-        </section>
+        </section> -->
 
-        <!-- ===== CONTACT SECTION ===== -->
-        <section class="contact" id="contacto">
-            <div class="contact__container">
-                <div class="contact__info" data-aos="fade-right">
-                    <h2 class="section-title">Contáctenos</h2>
-                    <p class="contact__text">Estamos listos para atender sus requerimientos. Comuníquese con nosotros y
-                        un asesor especializado le brindará la mejor solución.</p>
-                    <div class="contact__details">
-                        <div class="contact__detail">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
-                            </svg>
-                            <span>+58 (412) 3483091</span>
-                        </div>
-                        <div class="contact__detail">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                <polyline points="22,6 12,13 2,6" />
-                            </svg>
-                            <span>info.sls@sanluis.com.ve</span>
-                        </div>
-                        <div class="contact__detail">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                                <circle cx="12" cy="10" r="3" />
-                            </svg>
-                            <span>Av. Principal las industrias, Zona Industrial II, Barquisimeto - Venezuela</span>
-                        </div>
-                    </div>
+        <section class="info-section" id="contacto">
+            <div class="info-section__container info-section__split">
+                <div>
+                    <p class="info-kicker">Información útil</p>
+                    <h2 class="info-title">Importante y contacto</h2>
                 </div>
-                <form class="contact__form" id="contact-form" data-aos="fade-left" novalidate>
-                    <div class="contact__form-group">
-                        <input type="text" id="name" name="name" placeholder="Nombre completo" required
-                            class="contact__input" autocomplete="name">
-                        <span class="contact__input-message"></span>
-                    </div>
-                    <div class="contact__form-group">
-                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required
-                            class="contact__input" autocomplete="email">
-                        <span class="contact__input-message"></span>
-                    </div>
-                    <div class="contact__form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Teléfono" class="contact__input"
-                            autocomplete="tel">
-                        <span class="contact__input-message"></span>
-                    </div>
-                    <div class="contact__form-group">
-                        <select id="unidad" name="unidad" required class="contact__input">
-                            <option value="" disabled selected>Unidad de Negocio de interés</option>
-                            <option value="Hidrocarburos">Hidrocarburos</option>
-                            <option value="Suministros">Suministros</option>
-                            <option value="Transporte">Transporte</option>
-                            <option value="General">Consulta General</option>
-                        </select>
-                        <span class="contact__input-message"></span>
-                    </div>
-                    <div class="contact__form-group">
-                        <textarea id="message" name="message" placeholder="Su mensaje" rows="4" required
-                            class="contact__textarea"></textarea>
-                        <span class="contact__input-message"></span>
-                    </div>
-                    <button type="submit" class="contact__submit m3-button" id="form-submit-btn">
-                        <span class="btn-text">Enviar mensaje</span>
-                        <span class="btn-spinner">
-                            <svg viewBox="0 0 24 24" width="20" height="20">
-                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="3"
-                                    stroke-dasharray="31.4 31.4" stroke-linecap="round" />
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="contact__toast" id="form-toast">
-                        <div class="contact__toast-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                                stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12" />
-                            </svg>
-                        </div>
-                        <div class="contact__toast-content">
-                            <span class="contact__toast-title">¡Mensaje enviado!</span>
-                            <span class="contact__toast-text">Nos pondremos en contacto pronto.</span>
-                        </div>
-                    </div>
-                </form>
+                <div class="info-copy">
+                    <h3>Aspectos importantes</h3>
+                    <ul>
+                        <li>Los equipos y maquinarias incluidos en las planillas de solicitud de cupos deben estar operativos al momento de la inspección.</li>
+                        <li>Para cupos mayores a 10.000 litros mensuales, el tanque de almacenamiento debe contar con un dique de contención.</li>
+                    </ul>
+                    <h3>Contacto</h3>
+                    <p><strong>Instagram / Redes:</strong> <a href="https://instagram.com/sanluishidrocarburos" target="_blank" rel="noopener noreferrer">@sanluishidrocarburos</a></p>
+                    <ul class="contact-phones">
+                        <li><a href="tel:+584121855427">(0412) 185 5427</a></li>
+                        <li><a href="tel:+584126092666">(0412) 609 2666</a></li>
+                        <li><a href="tel:+584126092646">(0412) 609 2646</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__col" data-aos="fade-up">
-                <div class="footer__logo">
-                    <div class="footer__logo-placeholder">
-                        <!-- <span class="logo-text logo-text--light">GRUPO SAN LUIS</span> -->
-                        <img src="./image/isotipoinver.png" alt="Grupo San Luis - Logotipo" class="header__logo-img">
-                    </div>
-                </div>
-                <p class="footer__tagline">Soluciones energéticas integrales para el desarrollo sostenible.</p>
-                <div class="footer__social">
-                    <a href="https://instagram.com/suministrossanluis" target="_blank" rel="noopener noreferrer"> <svg
-                            viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="5" />
-                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                        </svg>@suministrossanluis</a>
-                    <a href="https://instagram.com/sanluistransporte" target="_blank" rel="noopener noreferrer"> <svg
-                            viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="5" />
-                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                        </svg> @sanluistransporte</a>
-                    <a href="https://instagram.com/lubricantessanluis" target="_blank" rel="noopener noreferrer"> <svg
-                            viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="5" />
-                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                        </svg> @lubricantessanluis</a>
-                    <a href="https://instagram.com/sanluishidrocarburos" target="_blank" rel="noopener noreferrer"><svg
-                            viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="5" />
-                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                        </svg> @sanluishidrocarburos</a>
-                    <!-- <a href="#" class="footer__social-link" aria-label="YouTube">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                            <path
-                                d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" />
-                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff" />
-                        </svg>
-                    </a> -->
-                </div>
-            </div>
-            <div class="footer__col" data-aos="fade-up" data-aos-delay="100">
-                <h4 class="footer__heading">Enlaces</h4>
-                <ul class="footer__links">
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="/#nosotros">Quiénes Somos</a></li>
-                    <li><a href="/#sostenibilidad">Sostenibilidad</a></li>
-                    <li><a href="/#contacto">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer__col" data-aos="fade-up" data-aos-delay="200">
-                <h4 class="footer__heading">Unidades de Negocio</h4>
-                <ul class="footer__links">
-                    <li><a href="/hidrocarburos">Hidrocarburos</a></li>
-                    <li><a href="/suministros">Lubricantes y Repuestos</a></li>
-                    <li><a href="/transporte">Transporte</a></li>
-                </ul>
-            </div>
-            <div class="footer__col" data-aos="fade-up" data-aos-delay="300">
-                <h4 class="footer__heading">Contacto</h4>
-                <ul class="footer__links footer__links--contact">
-                    <li>Av. Principal las industrias</li>
-                    <li>Zona Industrial II, Barquisimeto</li>
-                    <li>Tel: <a href="tel:+584123483091">+58 (412) 3483091</a></li>
-                    <li><a href="mailto:info.sls@sanluis.com.ve">info.sls@sanluis.com.ve</a></li>
-                </ul>
-            </div>
-        </div>
         <div class="footer__bottom">
             <p>&copy; 2026 Grupo San Luis. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script type="module" src="./script.js"></script>
 </body>
 
